@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:inAppPurchase">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/inAppPurchase.aar/04aaa0d66ff3d40a51daa83839883be4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/inAppPurchase.aar/04aaa0d66ff3d40a51daa83839883be4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

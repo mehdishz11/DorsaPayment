@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgr_round_ff"
+    android:layoutDirection="ltr"
+    android:padding="16dp">
+
+    <ir.dorsa.totalpayment.customView.CTextView
+        android:id="@+id/dialog_register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="شماره تلفن همراه خود را وارد نمایید"
+        android:textColor="#0e42a7"
+        android:textSize="14sp" />
+
+    <ir.dorsa.totalpayment.customView.CTextView
+        android:id="@+id/title_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_register_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="برای پرداخت شماره همراه خود را وارد نمایید"
+        android:textColor="#0e42a7"
+        android:textSize="14sp" />
+
+    <ir.dorsa.totalpayment.customView.CTextView
+        android:id="@+id/dialog_register_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_register"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="خطا در ارتباط با اینترنت"
+        android:textColor="#ff4a4a"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ir.dorsa.totalpayment.customView.cEditText
+        android:id="@+id/dialog_register_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_register_hint"
+        android:layout_marginTop="5dp"
+        android:hint="شماره تلفن"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textSize="16sp"
+        android:textColor="#FF3595CA"
+        android:textColorHint="#b9e5f1"
+        android:cursorVisible="true"
+        app:backgroundTint="#b9e5f1" />
+
+    <ir.dorsa.totalpayment.customView.CTextView
+        android:id="@+id/dialog_register_has_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_register_phone_number"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="کد فعالسازی دارم"
+        android:textColor="#9e83fc"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_register_has_key"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ir.dorsa.totalpayment.customView.cButton
+            android:id="@+id/dialog_register_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:background="@drawable/button_dialog_register"
+            android:stateListAnimator="@null"
+            android:text="انصراف"
+            android:textColor="#7333a3"/>
+
+        <ir.dorsa.totalpayment.customView.cButton
+            android:id="@+id/dialog_register_btn_send"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:background="@drawable/button_ok_dialog_register"
+            android:stateListAnimator="@null"
+            android:text="تایید"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

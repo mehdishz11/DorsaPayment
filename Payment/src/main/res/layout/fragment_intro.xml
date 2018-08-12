@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+    <ir.dorsa.totalpayment.customView.ViewPagerIndicator
+        android:id = "@+id/view_pager_indicator"
+        android:layout_width = "wrap_content"
+        android:layout_height = "20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/space_normal"
+        app:delimiterSize = "8dp"
+        app:itemTint="@color/colorPrimaryLight"
+        app:itemSelectedTint="@color/colorPrimaryDark"
+        app:itemScale = "2"
+        />
+
+    <RelativeLayout
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_pager_indicator"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_enter"
+            >
+        <ir.dorsa.totalpayment.customView.CTextView
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

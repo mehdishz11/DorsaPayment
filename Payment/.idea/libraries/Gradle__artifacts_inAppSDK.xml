@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:inAppSDK">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/inAppSDK.aar/126d7589f6901fb2e0e3228885e5cfe5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/inAppSDK.aar/126d7589f6901fb2e0e3228885e5cfe5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Payment.iml" filepath="$PROJECT_DIR$/Payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TestDorsaPayment.iml" filepath="$PROJECT_DIR$/../TestDorsaPayment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../inAppPurchase/inAppPurchase.iml" filepath="$PROJECT_DIR$/../inAppPurchase/inAppPurchase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../inAppSDK/inAppSDK.iml" filepath="$PROJECT_DIR$/../inAppSDK/inAppSDK.iml" />
+    </modules>
+  </component>
+</project>
