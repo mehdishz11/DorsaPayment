@@ -21,4 +21,4 @@ Follow below steps to add DorsaPayment to your app :1. Download below files and 
                                 implementation 'com.github.DorsaFamily:DorsaPayment:v1.1'
                             }
       ```
-Now you can use Function to start, check or cancel subcsription.                     
+Now you can use Function to start, check or cancel subscription (Check sample for more details).                     
