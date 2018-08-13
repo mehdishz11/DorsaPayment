@@ -83,12 +83,21 @@ public class Payment {
     }
 
     /**
-     *بررسی ایرانلی بودن کاربر
+     *بررسی ایرانسلی بودن کاربر
      */
     public boolean isUserIrancell(
             ) {
         PPayment pPayment = new PPayment(ivPayment, "", "", "");
         return !pPayment.getPhoneNumber().isEmpty() && Func.isNumberIrancell(pPayment.getPhoneNumber());
+    }
+
+    /**
+     *بررسی ثبت نام کاربر
+     */
+    public boolean isUserPremium(
+    ) {
+        PPayment pPayment = new PPayment(ivPayment, "", "", "");
+        return !pPayment.getPhoneNumber().isEmpty();
     }
 
     /**

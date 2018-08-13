@@ -14,23 +14,24 @@ import ir.dorsa.totalpayment.payment.Payment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final int REQUEST_CODE_REGISTER=123;
+    private final int REQUEST_CODE_REGISTER = 123;
 
-    private String appCode="123";
-    private String productCode="123";
-    private String irancellSku="test_dorsa_payment";
+    private String appCode = "123";
+    private String productCode = "123";
+    private String irancellSku = "test_dorsa_payment";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnStartPayment=findViewById(R.id.button);
-        Button btnCancelIrancel=findViewById(R.id.button2);
+        Button btnStartPayment = findViewById(R.id.button);
+        Button btnCancelIrancel = findViewById(R.id.button2);
 
         final Payment payment = new Payment(this);
 
 //        payment.setEnableIrancell(false);// برای عدم قابلیت اشتراک سیم کارت های همراه اول
+//        payment.isUserPremium();// بررسی اینکه کاربر قبلا ثبت نام نموده است یا نه
 
         btnStartPayment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,11 +61,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         //نمایش یا عدم نمایش دکمه لغو ایرانسل
-        if(payment.showCancelSubscribtion()){
+        if (payment.showCancelSubscribtion()) {
             btnCancelIrancel.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             btnCancelIrancel.setVisibility(View.GONE);
         }
 
@@ -74,32 +74,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                final ProgressDialog pDialog=new ProgressDialog(MainActivity.this);
+                final ProgressDialog pDialog = new ProgressDialog(MainActivity.this);
                 pDialog.setMessage("در حال انجام درخواست ...");
 
+                pDialog.show();
+                payment.cancelIrancell(irancellSku, new IrancellCancel.onIrancellCanceled() {
+                    @Override
+                    public void resultSuccess() {
+                        pDialog.cancel();
+                        Toast.makeText(MainActivity.this, "لغو موفقیت آمیز و خروج", Toast.LENGTH_SHORT).show();
+                    }
 
-                if(payment.isUserIrancell()){
-
-                    pDialog.show();
-
-                    payment.cancelIrancell(irancellSku,new IrancellCancel.onIrancellCanceled() {
-                        @Override
-                        public void resultSuccess() {
-                            pDialog.cancel();
-                            Toast.makeText(MainActivity.this, "لغو موفقیت آمیز و خروج", Toast.LENGTH_SHORT).show();
-                        }
-
-                        @Override
-                        public void resultFailed(String msg) {
-                            pDialog.cancel();
-                            Toast.makeText(MainActivity.this, msg+"اشکال در لغو به دلیل ", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                }
+                    @Override
+                    public void resultFailed(String msg) {
+                        pDialog.cancel();
+                        Toast.makeText(MainActivity.this, msg + "اشکال در لغو به دلیل ", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
+
         });
-
-
 
 
     }
