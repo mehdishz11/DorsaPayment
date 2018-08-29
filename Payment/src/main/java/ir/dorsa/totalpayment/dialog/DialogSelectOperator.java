@@ -28,7 +28,7 @@ public class DialogSelectOperator extends Dialog {
     private LinearLayout lnrSelectOprator;
 
     private onClick onClick;
-`
+
 
     public static final int OPERATOR_NOT_SELECTED=-1;
     public static final int OPERATOR_MCI=1;
