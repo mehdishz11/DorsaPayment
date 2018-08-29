@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import ir.dorsa.totalpayment.irancell.IrancellCancel;
-import ir.dorsa.totalpayment.payment.Payment;
+import com.psb.dorsa.irancell.IrancellCancel;
+import com.psb.dorsa.payment.Payment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
 //        payment.setEnableIrancell(false);// برای عدم قابلیت اشتراک سیم کارت های همراه اول
 //        payment.isUserPremium();// بررسی اینکه کاربر قبلا ثبت نام نموده است یا نه
 
+
+
         btnStartPayment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
                                 } else {//غیر فعال می باشد
                                     Intent intentDorsaPayment = payment.getPaymentIntent(
                                             "متن ارسال شماره موبایل",
-                                            "1468",
-                                            "1468200",
-                                            "fandoghdorsa",
+                                            appCode,
+                                            productCode,
+                                            irancellSku,
                                             new int[]{R.layout.intri_0, R.layout.intri_1, R.layout.intri_2, R.layout.intri_3}
                                     );
                                     startActivityForResult(intentDorsaPayment, REQUEST_CODE_REGISTER);
