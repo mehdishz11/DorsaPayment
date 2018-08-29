@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 
+
 import net.jhoobin.jhub.CharkhoneSdkApp;
 
 import ir.dorsa.totalpayment.intro.FragmentIntro;
@@ -24,6 +25,7 @@ import static ir.dorsa.totalpayment.payment.Payment.KEY_TEXT_SEND_PHONE_NUMBER;
 public class PaymentActivity extends AppCompatActivity implements
         FragmentIntro.interaction,
         FragmentPayment.interactionPayment {
+
 
     private static final String KEY_FRG_INTRO = "KEY_FRG_INTRO";
     private static final String KEY_FRG_PAYMENT = "KEY_FRG_PAYMENT";
