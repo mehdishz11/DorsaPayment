@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bgr_round_ff">
 
-        <ir.dorsa.totalPayment.customView.CTextView
+        <ir.dorsa.totalpayment.customView.CTextView
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:textColor="@color/purple"
             android:textSize="14sp" />
 
-        <ir.dorsa.totalPayment.customView.cButton
+        <ir.dorsa.totalpayment.customView.cButton
             android:id="@+id/button3"
             android:layout_width="120dp"
             android:layout_height="40dp"

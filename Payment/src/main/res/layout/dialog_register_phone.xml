@@ -7,7 +7,7 @@
     android:layoutDirection="ltr"
     android:padding="16dp">
 
-    <ir.dorsa.totalPayment.customView.CTextView
+    <ir.dorsa.totalpayment.customView.CTextView
         android:id="@+id/dialog_register_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         android:textColor="#0e42a7"
         android:textSize="14sp" />
 
-    <ir.dorsa.totalPayment.customView.CTextView
+    <ir.dorsa.totalpayment.customView.CTextView
         android:id="@+id/title_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         android:textColor="#0e42a7"
         android:textSize="14sp" />
 
-    <ir.dorsa.totalPayment.customView.CTextView
+    <ir.dorsa.totalpayment.customView.CTextView
         android:id="@+id/dialog_register_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         android:textSize="14sp"
         android:visibility="gone" />
 
-    <ir.dorsa.totalPayment.customView.cEditText
+    <ir.dorsa.totalpayment.customView.cEditText
         android:id="@+id/dialog_register_phone_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
         android:cursorVisible="true"
         app:backgroundTint="#b9e5f1" />
 
-    <ir.dorsa.totalPayment.customView.CTextView
+    <ir.dorsa.totalpayment.customView.CTextView
         android:id="@+id/dialog_register_has_key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <ir.dorsa.totalPayment.customView.cButton
+        <ir.dorsa.totalpayment.customView.cButton
             android:id="@+id/dialog_register_btn_cancel"
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -87,7 +87,7 @@
             android:text="انصراف"
             android:textColor="#7333a3"/>
 
-        <ir.dorsa.totalPayment.customView.cButton
+        <ir.dorsa.totalpayment.customView.cButton
             android:id="@+id/dialog_register_btn_send"
             android:layout_width="0dp"
             android:layout_height="40dp"

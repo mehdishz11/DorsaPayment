@@ -12,7 +12,7 @@
     </android.support.v4.view.ViewPager>
 
 
-    <ir.dorsa.totalPayment.customView.ViewPagerIndicator
+    <ir.dorsa.totalpayment.customView.ViewPagerIndicator
         android:id = "@+id/view_pager_indicator"
         android:layout_width = "wrap_content"
         android:layout_height = "20dp"
@@ -38,7 +38,7 @@
             android:layout_height="45dp"
             android:background="@drawable/btn_enter"
             >
-        <ir.dorsa.totalPayment.customView.CTextView
+        <ir.dorsa.totalpayment.customView.CTextView
             android:layout_width="125dp"
             android:layout_height="45dp"
             android:layout_alignParentRight="true"

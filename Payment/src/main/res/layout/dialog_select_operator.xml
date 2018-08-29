@@ -8,7 +8,7 @@
     android:layoutDirection="ltr"
     android:padding="@dimen/space_normal">
 
-    <ir.dorsa.totalPayment.customView.CTextView
+    <ir.dorsa.totalpayment.customView.CTextView
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 android:src="@drawable/mci_logo"
                 android:textColor="@color/gray" />
 
-            <ir.dorsa.totalPayment.customView.CTextViewBold
+            <ir.dorsa.totalpayment.customView.CTextViewBold
                 android:id="@+id/text_mci"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                 android:padding="15dp"
                 android:src="@drawable/irancell_logo" />
 
-            <ir.dorsa.totalPayment.customView.CTextViewBold
+            <ir.dorsa.totalpayment.customView.CTextViewBold
                 android:id="@+id/text_irancell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
         android:background="@drawable/btn_enter"
         android:clickable="true">
 
-        <ir.dorsa.totalPayment.customView.CTextView
+        <ir.dorsa.totalpayment.customView.CTextView
             android:layout_width="125dp"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"

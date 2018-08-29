@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import ir.dorsa.totalPayment.irancell.IrancellCancel;
-import ir.dorsa.totalPayment.payment.Payment;
+import ir.dorsa.totalpayment.irancell.IrancellCancel;
+import ir.dorsa.totalpayment.payment.Payment;
 
 
 public class MainActivity extends AppCompatActivity {
