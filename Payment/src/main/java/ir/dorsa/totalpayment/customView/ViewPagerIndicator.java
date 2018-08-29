@@ -14,11 +14,10 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.psb.dorsa.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import ir.dorsa.totalpayment.R;
 
 
 /** Created by Vitaly Vivchar on 13/01/17. */

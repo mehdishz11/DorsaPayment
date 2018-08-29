@@ -4,7 +4,7 @@ import android.content.Context;
 import android.provider.Settings;
 import android.support.multidex.MultiDexApplication;
 
-import com.psb.dorsa.R;
+import ir.dorsa.totalpayment.R;
 
 import net.jhoobin.jhub.CharkhoneSdkApp;
 

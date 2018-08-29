@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.psb.dorsa.R;
+import ir.dorsa.totalpayment.R;
 
 
 public class DialogSelectOperator extends Dialog {

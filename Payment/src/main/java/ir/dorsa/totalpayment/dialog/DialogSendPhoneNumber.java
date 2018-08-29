@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.psb.dorsa.R;
+import ir.dorsa.totalpayment.R;
 
 
 public class DialogSendPhoneNumber extends Dialog {

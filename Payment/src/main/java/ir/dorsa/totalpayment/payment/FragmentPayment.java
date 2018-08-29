@@ -15,11 +15,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.psb.dorsa.R;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import ir.dorsa.totalpayment.R;
 import ir.dorsa.totalpayment.dialog.DialogMessage;
 import ir.dorsa.totalpayment.dialog.DialogSendKey;
 import ir.dorsa.totalpayment.dialog.DialogSendPhoneNumber;

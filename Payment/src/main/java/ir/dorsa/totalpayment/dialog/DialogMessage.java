@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.psb.dorsa.R;
+import ir.dorsa.totalpayment.R;
 
 
 public class DialogMessage extends Dialog {

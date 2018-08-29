@@ -15,8 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.psb.dorsa.R;
-
+import ir.dorsa.totalpayment.R;
 import ir.dorsa.totalpayment.customView.ViewPagerIndicator;
 
 public class FragmentIntro extends Fragment {

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.psb.dorsa.R;
+import ir.dorsa.totalpayment.R;
 
 
 public class ToolbarHandler {
